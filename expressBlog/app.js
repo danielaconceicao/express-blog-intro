@@ -1,5 +1,5 @@
 /*
-Creiamo poi una rotta /posts che restituisca un oggetto json con la lista dei post e il conteggio, partendo da un array locale.
+
 La rotta relativa ai post dovrà chiamare la funzione index() dal controller dedicato ( controllers/posts.js )
 Configuriamo gli asset statici sull’applicazione in modo che si possano visualizzare le immagini associate ad ogni post.
 Testare nel browser. */
@@ -50,4 +50,12 @@ const post = [
         image: "",
         tags: ["tecnologia", "futuro", "innovazione", "intelligenza artificiale"]
     },
-]
+];
+
+//Creiamo poi una rotta /posts che restituisca un oggetto json con la lista dei post e il conteggio, partendo da un array locale.
+blog.get('/posts', (req, res) => {
+    res.json({
+        data: post,
+        count: post.length
+    });
+});
