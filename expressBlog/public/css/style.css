@@ -1,0 +1,23 @@
+header{
+    background-color: gray;
+}
+
+main{
+    background-color: black;
+    height: auto;
+} 
+
+h1{
+    margin-bottom: 0 !important;
+}
+
+ul{
+    padding: 1rem !important;
+    margin: 0 !important;
+}
+
+ul > li{
+    list-style: none;
+    padding-right: .4rem;
+    text-align: start;
+}
